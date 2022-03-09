@@ -1,0 +1,2 @@
+# examenITicket-
+Primer ParcialCuestionario
