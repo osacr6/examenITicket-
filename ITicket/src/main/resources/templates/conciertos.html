@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conciertos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="main-container">
+           
+
+            <!-- MENU -->
+            <div class="container">
+                <div class="grid">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <img class="logo-image" src="./images/Concert-icon.png" alt="logo"/>
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TITULO -->
+            <div class="container">
+                <div class="page-title">
+                    <h2>Proximos Conciertos</h2>
+                </div>
+            </div>  
+           
+            
+            <div class="container">
+                <a href="#" class="button">Crear evento</a>
+            </div>
+                            
+            <div class="container">
+                <table class="page-table">
+                    <th:block th:each="concierto : ${conciertos}">
+                        <tr>
+                            <td th:text="${concierto.getFecha}"></td>
+                            <td th:text="${concierto.getCosto}"></td>
+                            <td th:text="${concierto.capacidadMax}"></td>
+                            <td th:text="${concierto.getLugar}"></td>
+                            <td> 
+                                <a th:href="@{'/conciertos/delete/'(id=${concierto.getId})}">Eliminar</a>
+                            </td>
+                        </tr>
+                </th:block>
+                </table>
+            </div>  
+        </div>
+    </body>
+</html>

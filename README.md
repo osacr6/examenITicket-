@@ -1,2 +1,2 @@
 # examenITicket-
-Primer ParcialCuestionario
+Primer Parcial Daniel Murillo

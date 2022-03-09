@@ -1,0 +1,45 @@
+/* CONTAINERS */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-self: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1
+}
+
+/* IMAGES */
+
+.nav-img::before {
+  content: "";
+  background-image: url(https://icons.iconarchive.com/icons/icons8/ios7/16/Music-Guitar-icon.png);
+  background-size: contain;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  margin-right: 8px;
+}
+
+/* BUTTONS */
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+.page-table td {
+    padding: 10px 20px; 
+}
